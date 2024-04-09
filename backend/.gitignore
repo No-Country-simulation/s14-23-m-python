@@ -132,9 +132,11 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-gardenshare/.env
+.env
+*/.env
 ../.env
 .venv
+env
 env/
 venv/
 ENV/

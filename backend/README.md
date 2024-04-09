@@ -137,8 +137,8 @@ ejecutar las distintas peticiones desde la interfaz de frontend.
 El proyecto de backend fue desarrollado por el siguiente talento:
 
 
-| Talento                | Github                                              | Linkedin                                                                   |
-|------------------------|-----------------------------------------------------|----------------------------------------------------------------------------|
-| [Crispthofer Rincon]() | [CrispthoAlex](https://github.com/CrispthoAlex)     | [carmurrain](https://www.linkedin.com/in/carmurrain)                       |
-| []()  | [](https://github.com/eseminara)           | [e-seminara](https://www.linkedin.com/in/)                                 |
-| []()       | [](https://github.com/LucasSimoesMDP) | [lucas-gabriel-simoes](https://www.linkedin.com/in/)             |
+| Talento                | Github                                              | Linkedin                                                                 |
+|------------------------|-----------------------------------------------------|--------------------------------------------------------------------------|
+| [Crispthofer Rincon]() | [CrispthoAlex](https://github.com/CrispthoAlex)     | [carmurrain](https://www.linkedin.com/in/carmurrain)                     |
+| []()  | [](https://github.com/)           | [](https://www.linkedin.com/in/)                                 |
+| []()       | [](https://github.com/) | [](https://www.linkedin.com/in/)             |
