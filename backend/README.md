@@ -46,7 +46,7 @@ pip install poetry
 ````sh
 poetry --version
 ````
-![poetry --version](../assets/images/poetry-version.png)
+![poetry --version](./assets/images/poetry-version.png)
 
 _Nota: La versión puede cambiar al momento de instalar_
 
@@ -99,7 +99,7 @@ python manage.py createsuperuser
 
 Debes completar información basica:
 
-<img src="assets/images/admin_setup.png" width="250" height="auto">
+<img src="./assets/images/admin_setup.png" width="250" height="auto">
 
 * Levantar el servidor de Django.
 
