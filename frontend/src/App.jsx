@@ -15,12 +15,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <h1>Garden Share</h1>
-        <p>Caracteristicas: Crea una cuenta y comienza a disfrutar de la app
-          Es gratuito
-          Comparte con otros amantes de las plantas
+        <p>
+          Caracteristicas: Crea una cuenta y comienza a disfrutar de la app Es
+          gratuito Comparte con otros amantes de las plantas
         </p>
 
-        <Caracteristicas/>
+        <Caracteristicas />
       </div>
     </>
   )
