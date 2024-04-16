@@ -1,5 +1,6 @@
 from django.db import models
 from apps.category.models import Category
+from apps.users.models import CustomUser
 
 # Create your models here.
 
@@ -15,6 +16,6 @@ class Product(models.Model):
     watering = models.PositiveSmallIntegerField(null=True)
     additional_data = models.TextField(null=True)
     price = models.FloatField(default=0.0)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     images_url = models.TextField()
     created_at = models.DateField(auto_now_add=True)
