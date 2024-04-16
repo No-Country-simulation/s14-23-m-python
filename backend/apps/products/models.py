@@ -17,4 +17,4 @@ class Product(models.Model):
     price = models.FloatField(default=0.0)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     images_url = models.TextField()
-    created_at = models.DateTimeField()
+    created_at = models.DateField(auto_now_add=True)
