@@ -10,8 +10,11 @@
   --color-primary: #0AB861;
   --color-secondary: #FF8000;
   --color-tertiary: #0C121E;
+  --color-primary-700:#056133;
+  --bg-color: #E2FdF0;
 }
 
 body {
   margin: 0;
+  padding:0;
 }

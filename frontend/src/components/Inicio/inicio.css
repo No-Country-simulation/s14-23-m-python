@@ -1,0 +1,125 @@
+.container_home {
+    display: grid;
+    padding: 0 5vw;
+    font-family: var(--font-text);
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.row_home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: start;
+    justify-content: start;
+    align-content: center;
+}
+
+.grid-item1_home {
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    padding-left: 20px;
+
+}
+
+.titulo_home {
+    font-size: 3.812rem;
+    font-weight: 500;
+    line-height: 73.2px;
+    color: var(--color-tertiary);
+    padding: 0px 0 0 20px;
+    margin: 0;
+}
+
+#alegria_home {
+    color: var(--color-primary-700);
+    font-size: 3.812rem;
+    font-weight: 500;
+    line-height: 73.2px;
+}
+
+.subtexto_home {
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: var(--color-primary-700);
+    max-width: 60%;
+    padding: 0 0 0 20px;
+}
+
+.boton_home {
+    border-radius: 8px;
+    background-color: var(--color-secondary);
+    border: none;
+    padding: 20px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19.2px;
+    margin: 10px 0 0 20px;
+    text-wrap: wrap;
+}
+
+.grid-item2_home {
+    grid-column: 2/3;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: center;
+    align-items: center;
+}
+
+.grid-item2_home img {
+    width: fit-content;
+    max-width: 90%;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .row_home {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: start;
+        justify-content: start;
+        align-content: center;
+        height: 100vh;
+    }
+
+    .grid-item1_home {
+        padding: 0 0 0 10px;
+
+    }
+
+    .titulo_home {
+        font-size: 3.062rem;
+        padding: 0 0 0 10px;
+    }
+
+    #alegria_home {
+        font-size: 3.062rem;
+    }
+
+    .subtexto_home {
+        font-size: 1.1rem;
+        max-width: 70%;
+        padding: 0 0 0 10px;
+    }
+
+    .boton_home {
+        border-radius: 6px;
+        padding: 15px 20px;
+        font-weight: 550;
+        line-height: 19.2px;
+        margin: 10px 0 0 10px;
+        text-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 770px) {
+    .grid-item2_home img {
+        width: fit-content;
+        max-width: 70%;
+    }
+}

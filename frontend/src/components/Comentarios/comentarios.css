@@ -1,0 +1,18 @@
+.container_comentarios {
+    padding: 0 5vw;
+    font-family: var(--font-text);
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.titulo_comentarios {
+    width: 491px;
+    height: 47px;
+    font-family: var(--font-text);
+    font-size: 2.438rem;
+    font-weight: 500;
+    line-height: 46.8px;
+    color: var(--color-tertiary);
+    text-align: left;
+
+}
