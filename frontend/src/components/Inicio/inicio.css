@@ -1,4 +1,4 @@
-.container_home {
+.container_inicio {
     display: grid;
     padding: 0 5vw;
     font-family: var(--font-text);
@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-.row_home {
+.row_inicio {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -15,7 +15,7 @@
     align-content: center;
 }
 
-.grid-item1_home {
+.grid-item1_inicio {
     grid-column: 1/2;
     display: flex;
     flex-flow: column wrap;
@@ -24,7 +24,7 @@
 
 }
 
-.titulo_home {
+.titulo_inicio {
     font-size: 3.812rem;
     font-weight: 500;
     line-height: 73.2px;
@@ -33,14 +33,14 @@
     margin: 0;
 }
 
-#alegria_home {
+#alegria_inicio {
     color: var(--color-primary-700);
     font-size: 3.812rem;
     font-weight: 500;
     line-height: 73.2px;
 }
 
-.subtexto_home {
+.subtexto_inicio {
     display: flex;
     font-size: 1.25rem;
     line-height: 24px;
@@ -49,7 +49,7 @@
     padding: 0 0 0 20px;
 }
 
-.boton_home {
+.boton_inicio {
     border-radius: 8px;
     background-color: var(--color-secondary);
     border: none;
@@ -61,7 +61,7 @@
     text-wrap: wrap;
 }
 
-.grid-item2_home {
+.grid-item2_inicio {
     grid-column: 2/3;
     display: flex;
     flex-flow: row wrap;
@@ -69,57 +69,8 @@
     align-items: center;
 }
 
-.grid-item2_home img {
+.grid-item2_inicio img {
     width: fit-content;
     max-width: 90%;
     padding-right: 20px;
-}
-
-@media screen and (max-width: 992px) {
-
-    .row_home {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        justify-items: start;
-        justify-content: start;
-        align-content: center;
-        height: 100vh;
-    }
-
-    .grid-item1_home {
-        padding: 0 0 0 10px;
-
-    }
-
-    .titulo_home {
-        font-size: 3.062rem;
-        padding: 0 0 0 10px;
-    }
-
-    #alegria_home {
-        font-size: 3.062rem;
-    }
-
-    .subtexto_home {
-        font-size: 1.1rem;
-        max-width: 70%;
-        padding: 0 0 0 10px;
-    }
-
-    .boton_home {
-        border-radius: 6px;
-        padding: 15px 20px;
-        font-weight: 550;
-        line-height: 19.2px;
-        margin: 10px 0 0 10px;
-        text-wrap: wrap;
-    }
-
-}
-@media screen and (max-width: 770px) {
-    .grid-item2_home img {
-        width: fit-content;
-        max-width: 70%;
-    }
 }

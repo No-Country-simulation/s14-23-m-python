@@ -7,7 +7,7 @@ const Comentarios = () => {
             <div>
                 <h4 class="titulo_comentarios" >Dejanos tus comentarios</h4>
                 <div>
-                    <label htmlFor="">Nombres y Apellidos</label>
+                    <label htmlFor="text">Nombres y Apellidos</label>
                     <input type="text" name="nombres_apellidos" id="nombres_apellidos" placeholder='Julieta Cardenas Pena' required />
                 </div>
                 <div>
