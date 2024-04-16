@@ -6,7 +6,7 @@ Este proyecto backend esta desarrollado con las tecnologias Python 3.10+, **[Dja
 base de datos **Sqlite**, [...]() para gestión de imagenes, y documentación de API
 con Swagger ([drf-yasg - Yet another Swagger generator](https://drf-yasg.readthedocs.io/en/stable/readme.html)). Su
 despliegue remoto se llevo a cabo en [pythonanywhere.com](https:www.pythonanywhere.com)
-bajo el contenedor [...].
+bajo el contenedor [gardenshareapp.pythonanywhere.com](https://gardenshareapp.pythonanywhere.com/swagger/).
 
 > ## Uso Local
 Para uso local se emplearán las herramientas listadas en los archivos [requirements.txt](requirements.txt),
@@ -46,7 +46,7 @@ pip install poetry
 ````sh
 poetry --version
 ````
-![poetry --version](./assets/images/poetry-version.png)
+![poetry --version](./assets/images/poetry-version.PNG)
 
 _Nota: La versión puede cambiar al momento de instalar_
 
@@ -126,8 +126,8 @@ python manage.py runserver
 Accede al enlace donde se despliega el entorno backend. En esta ocasión se implementó el entorno de
 [pythonanywhere](https://www.pythonanywhere.com/):
 
-* Cliquea https://s1319mpython.pythonanywhere.com/ para acceder a los diferentes endpoints que se desarrollarón para
-ejecutar las distintas peticiones desde la interfaz de frontend.
+* Cliquea https://gardenshareapp.pythonanywhere.com/swagger/ para acceder a los diferentes endpoints que se desarrollarón y
+ejecutar las distintas peticiones desde la interfaz de Swagger.
 
 > ## Endpoints desarrollados
 <img src="assets/images/enpoints_API_list.png" width="350" height="auto">
@@ -140,5 +140,4 @@ El proyecto de backend fue desarrollado por el siguiente talento:
 | Talento                | Github                                              | Linkedin                                                                 |
 |------------------------|-----------------------------------------------------|--------------------------------------------------------------------------|
 | [Crispthofer Rincon]() | [CrispthoAlex](https://github.com/CrispthoAlex)     | [carmurrain](https://www.linkedin.com/in/carmurrain)                     |
-| []()  | [](https://github.com/)           | [](https://www.linkedin.com/in/)                                 |
-| []()       | [](https://github.com/) | [](https://www.linkedin.com/in/)             |
+| [Mauricio Daza]()      | [madev7](https://github.com/madev7)           | [](https://www.linkedin.com/in/)                                 |
