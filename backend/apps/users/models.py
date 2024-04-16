@@ -14,10 +14,14 @@ class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         if not email:
             raise ValueError("e-mail is required")
+        if not extra_fields.get("userName"):
+            raise ValueError("Username is required")
+        if not password:
+            raise ValueError("Password is required")
+
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-        if password:
-            user.password = make_password(password)
+        user.password = make_password(password)
         user.save(using=self._db)
         return user
 
@@ -41,11 +45,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     userID = models.AutoField(primary_key=True)
     userName = models.CharField(max_length=150, unique=True)
     email = models.EmailField(unique=True)
-    password = models.CharField(max_length=128)
-    name = models.CharField(max_length=150)
-    lastName = models.CharField(max_length=150)
-    address = models.TextField()
-    phone = models.CharField(max_length=20)
+    password = models.CharField(max_length=128, null=False)
+    name = models.CharField(default="", max_length=50, null=True)
+    lastName = models.CharField(default="", max_length=50, null=True)
+    address = models.TextField(default="", max_length=150, null=True)
+    phone = models.CharField(default="", max_length=20, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     # fields required by AbstractBaseUser
@@ -54,9 +58,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     objects = CustomUserManager()
 
-    USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["userName", "name", "lastName", "address", "phone"]
-
+    USERNAME_FIELD = "userName"
+    REQUIRED_FIELDS = []  # To update user, not required fields
+    # ["userName", "email", "password"]
     """
     Adding related_name='custom_user_set' to the groups and user_permissions relation fields in the User model,
     to avoid conflicts of reverse accessor names.
@@ -76,4 +80,4 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     )
 
     def __str__(self):
-        return self.userName
+        return f"{self.userName}: {self.email}"
