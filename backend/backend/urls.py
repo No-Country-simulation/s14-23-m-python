@@ -41,11 +41,14 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
+API_DIR = "api/"
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include("apps.users.urls")),
-    path("api/", include("apps.category.urls")),
-    path("api/", include("apps.products.urls")),
+    path(API_DIR, include("apps.login.urls")),
+    path(API_DIR, include("apps.users.urls")),
+    path(API_DIR, include("apps.category.urls")),
+    path(API_DIR, include("apps.products.urls")),
     # path("api/orders/", include("apps.orders.urls")),
     # path("api/payments/", include("apps.payments.urls")),
 ]

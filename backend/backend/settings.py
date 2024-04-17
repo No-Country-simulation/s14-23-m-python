@@ -45,6 +45,7 @@ DJANGO_APPS = [
 
 # project apps
 LOCAL_APPS = [
+    "apps.login",
     "apps.users",
     "apps.products",
     "apps.category",
