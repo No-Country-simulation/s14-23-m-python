@@ -12,10 +12,15 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from decouple import config
+from dotenv import load_dotenv
 import os
 
 
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=False, cast=bool)  # True
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardenshareapp.pythonanywhere.com"]
 
@@ -59,8 +64,8 @@ THIRD_PARTY_APPS = [
     "rest_framework_simplejwt",
     # "rest_framework_simplejwt.authentication.JWTAuthentication",
     "rest_framework_simplejwt.token_blacklist",
-    # "cloudinary_storage",
-    # "cloudinary",
+    "cloudinary_storage",
+    "cloudinary",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
@@ -176,5 +181,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+
+# Uploading Images to Cloudinary
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 # AUTH_USER_MODEL = 'apps.users'
