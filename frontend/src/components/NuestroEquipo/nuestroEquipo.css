@@ -1,0 +1,131 @@
+.cont-n-equipo {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;/*ah modificar*/
+}
+
+.cont-equipo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.cont-titulo-nequipo {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.titulo-ne {
+    text-align: left;
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 46.8px;
+    color: var(--color-tertiary-900);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.cont-tarjetas-equipo {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    row-gap: 40px;
+
+}
+
+.tarjeta-equipo {
+    display: flex;
+    flex-direction: row;
+    width: 385px;
+    height: 124px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary-400);
+}
+
+.cont-img-iequipo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-integrante {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.cont-nombre-redes {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.nombre-integrante {
+    border-bottom: 1px solid var(--color-t);
+    width: 95%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+
+}
+
+.h2-nombreI {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0;
+    color: var(--color-tertiary-900);
+}
+
+.p-puestoI {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-primary-700);
+    margin-top: 5px;
+
+
+}
+
+
+
+.redes-integrante {
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+
+
+}
+
+.l-twi,.l-linkedin {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
