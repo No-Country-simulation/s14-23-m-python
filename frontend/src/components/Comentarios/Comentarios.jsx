@@ -1,25 +1,26 @@
-import '../Comentarios/comentarios.css';
+import './comentarios.css';
+import imagenComentarios from '../../assets/img/rectangle_229.png'
 
 
 const Comentarios = () => {
     return (
-        <div claseName="container_comentarios">
-            <div>
-                <h4 class="titulo_comentarios" >Dejanos tus comentarios</h4>
-                <div>
-                    <label htmlFor="text">Nombres y Apellidos</label>
-                    <input type="text" name="nombres_apellidos" id="nombres_apellidos" placeholder='Julieta Cardenas Pena' required />
-                </div>
-                <div>
-                    <input type="email" name="comentarios_email" id="comentarios_email" />
-                </div>
-                <div>
-                    <textarea name="area_comentarios" id="area_comentarios" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit">Enviar Mensaje</button>
+        <div className="container_comentarios">
+
+            <p className='titulo_comentarios' >Dejanos tus comentarios</p>
+
+            <div className='form_comentarios'>
+                
+                <input className='input_comentarios' type="text" name="nombres_apellidos" id="nombres_apellidos" placeholder='nombre completo' required />
+
+                <input className='input_comentarios' type="email" name="comentarios_email" id="comentarios_email" placeholder='correo electronico' required />
+
+
+                <textarea className='area_comentarios' name="area_comentarios" id="area_comentarios" placeholder="Datos adicionales" cols="70" rows="10"></textarea>
+
+                <button className='boton_comentarios' type="submit">Enviar Mensaje</button>
             </div>
-            <div>
-                <img src="" alt="" />
+            <div className='imagen_comentarios'>
+                <img className='img_comentarios' src={imagenComentarios} alt="" />
             </div>
         </div>
     );

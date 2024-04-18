@@ -4,9 +4,9 @@ import imagenInicio from '../../assets/img/Group_78.png';
 const Inicio = () => {
     return (
         <div className="container_inicio">
-            <div className="row_home">
+            <div className="row_inicio">
                 <div className="grid-item1_inicio">
-                    <p className="titulo_home">Intercambia <br />
+                    <p className="titulo_inicio">Intercambia <br />
                         la <span id="alegria_inicio">Alegria</span></p>
                     <p className="subtexto_inicio">De cultivar con nuestra calida comunidad y descubre nuevas variedades</p>
 

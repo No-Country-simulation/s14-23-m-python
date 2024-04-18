@@ -12,6 +12,10 @@
   --color-tertiary: #0C121E;
   --color-primary-700:#056133;
   --bg-color: #E2FdF0;
+  --color-tertiary-700: #26395F;
+  --color-primary-900: #10A05;
+  --color-tertiary-100: #B6C5E2;
+  --color-tertiary-container: #D7DFEF;
 }
 
 body {
