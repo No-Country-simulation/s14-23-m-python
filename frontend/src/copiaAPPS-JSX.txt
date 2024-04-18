@@ -5,6 +5,7 @@ import Testimonios from './components/Testimonios/testimonios'
 import QuienesSomos from './components/QuienesSomos/quienesSomos'
 import Nequipo from './components/NuestroEquipo/nuestroEquipo'
 import TarjetaE from './components/NuestroEquipo/tarjetaEquipo'
+import Footer from './components/Footer/footer'
 import Nancy from '../../frontend/src/assets/img/Nancy.png'
 import Giovanny from '../../frontend/src/assets/img/IMG-20240416-WA0007.jpg'
 import Sebastian from '../../frontend/src/assets/img/Foto CV3 1.png'
@@ -13,6 +14,7 @@ import Ruth from '../../frontend/src/assets/img/perfil.png'
 import Luz from '../../frontend/src/assets/img/Luz.png'
 import Sol from '../../frontend/src/assets/img/Sol.png'
 import Cris from '../../frontend/src/assets/img/1707232856350.jpg'
+import Mauricio from '../../frontend/src/assets/img/1701276580292.jpg'
 
 
 function App() {
@@ -92,7 +94,7 @@ function App() {
         />
 
         <TarjetaE
-        foto={Sebastian}
+        foto={Mauricio}
         nombre="Mauricio Daza"
         puesto="Back End Developer"
         linkedin="https://www.linkedin.com/in/mauricio-daza/"
@@ -126,6 +128,8 @@ function App() {
         />
 
         </Nequipo>
+
+        <Footer/>
 
 
 
