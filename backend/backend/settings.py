@@ -14,6 +14,7 @@ from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 from decouple import config
 import os
+import logging
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -176,5 +177,21 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+
+# Logging setup
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "debug.log",
+        },
+    },
+    "loggers": {
+        "django": {"handlers": ["file"], "level": "DEBUG", "propagate": True},
+    },
+}
 
 # AUTH_USER_MODEL = 'apps.users'
