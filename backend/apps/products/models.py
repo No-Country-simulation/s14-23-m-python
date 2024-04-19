@@ -49,3 +49,6 @@ class Product(models.Model):
             )
             self.images_url = image_response["secure_url"]  # save secure url
         super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.name
