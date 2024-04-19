@@ -4,10 +4,10 @@ from apps.products.models import Product
 
 
 class Order(models.Model):
-    user_id = models.ForeignKey(
+    user = models.ForeignKey(
         CustomUser, on_delete=models.CASCADE, related_name="orders"
     )
-    product_id = models.ForeignKey(
+    product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="orders"
     )
     quantity = models.IntegerField(default=0)
@@ -19,9 +19,9 @@ class Order(models.Model):
         """
         Calculate total before save the object
         """
-        self.total = self.quantity * self.product_id.price
+        self.total = self.quantity * self.product.price
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"""Order for {self.user_id}, Product: {self.product_id.name},
+        return f"""Order for {self.user.userName}, Product: {self.product.name},
       Quantity: {self.quantity}, Total: {self.total}"""
