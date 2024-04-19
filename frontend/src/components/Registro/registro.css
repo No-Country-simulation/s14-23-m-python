@@ -1,0 +1,79 @@
+.contenedor-registro{
+    display: flex;
+    width: 1440px;
+    background-color: #F0F3F9;
+}
+.img-registro{
+    height: 900px;
+}
+
+.bgRegistro{
+    height: 100%;
+}
+.contenedor-form-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 155px;
+}
+
+.titulo{
+    font-size: 61px;
+    color: #19253E;
+}
+
+.frase{
+    font-size: 20px;
+    color: #03351C;
+    text-align: start;
+}
+.form{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.form .input-registro{
+    width: 100%;
+    border: 1px solid #B6C5E2;
+    border-radius: 4px;
+    height: 40px;
+    padding: 12px 18px;
+    margin-bottom: 35px;
+}
+
+.form .input-registro:focus{
+    border: 1px solid #26395F;
+
+}
+
+.form .btn-registro{
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    margin-top:30px;
+    border: 1px solid var(--color-secondary);
+    box-shadow: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color-tertiary);
+}
+
+.enlace-sesion{
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.form .input-registro::placeholder{
+    color: cadetblue;
+}
+
+.enlace-inicia-sesion{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.terminos{
+    font-size: 10px;
+    color: var(--color-tertiary);
+}
