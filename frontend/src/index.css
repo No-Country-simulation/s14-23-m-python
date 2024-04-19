@@ -10,8 +10,14 @@
   --color-primary: #0AB861;
   --color-secondary: #FF8000;
   --color-tertiary: #0C121E;
+  --color-bg: #E2FDF0;
+
 }
 
-body {
+*{
+  font-family: var(--font-text);
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+

@@ -1,3 +1,9 @@
-h3{
-    color: blueviolet;
+
+
+.caracteristica{
+    border-right: 1px solid lightsalmon;
+}
+
+.icono{
+    width: 200px;
 }
