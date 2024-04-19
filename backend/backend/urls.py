@@ -41,13 +41,16 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
+API_URL = "api/"
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include("apps.users.urls")),
-    path("api/", include("apps.category.urls")),
-    path("api/", include("apps.products.urls")),
-    path("api/", include("apps.orders.urls")),
-    # path("api/payments/", include("apps.payments.urls")),
+    path(API_URL, include("apps.users.urls")),
+    path(API_URL, include("apps.category.urls")),
+    path(API_URL, include("apps.products.urls")),
+    path(API_URL, include("apps.orders.urls")),
+    path(API_URL, include("apps.payment_type.urls")),
+    # path(API_URL, include("apps.payments.urls")),
 ]
 
 url_swagger = [
