@@ -64,7 +64,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
-    "rest_framework_simplejwt.authentication.JWTAuthentication",
+    # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     "rest_framework_simplejwt.token_blacklist",
     "cloudinary_storage",
     "cloudinary",
@@ -81,7 +81,14 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # 'rest_framework_simplejwt.middleware.JWTAuthenticationMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}
 
 ROOT_URLCONF = "backend.urls"
 
