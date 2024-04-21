@@ -1,0 +1,234 @@
+.container_contacto {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    height: 100vh;
+    padding: 0 5vw 0 5vw;
+    font-family: var(--font-text);
+    background-color: var(--bg-color);
+}
+
+.titulo_contacto {
+    grid-column: 1/7;
+    grid-row: 1/2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding: 3rem 2.5rem 0 9.375rem;
+    background-image: url(../../assets/img/rectangle222.png);
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    height: 43.88vh;
+    padding-top: 0.5vh;
+}
+
+.usuario_contacto {
+    display: grid;
+    justify-items: start;
+    padding-left: 13.22vw;
+    padding-top: 7.83vh;
+}
+
+.nombre_contacto {
+    margin: 0;
+    width: 19rem;
+    height: 3.687rem;
+    font-weight: 400;
+    font-size: 3.062rem;
+    line-height: 3.675rem;
+    color: var(--bg-color);
+}
+
+.ocupacion_contacto {
+    margin: 0;
+    width: 16rem;
+    height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--bg-color);
+    text-align: start;
+    padding: 0 0 1rem 7px;
+}
+
+.boton_contacto {
+    align-self: center;
+    padding-top: 4rem;
+}
+
+.estilo_boton_contacto {
+    background-color: var(--color-primary-50);
+    border-radius: 4px;
+    border: 0;
+    padding: 0.3rem 1.5rem 0.5rem 1rem;
+    margin: 10px;
+}
+
+.texto_btn_contacto {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--color-primary-900);
+    margin-left: .5rem;
+}
+
+.img_avatar_contacto {
+    width: auto;
+    height:29vh;
+    z-index: 15;
+}
+
+.aside_contacto {
+    grid-column: 1/3;
+    grid-row: 2/5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    position:relative;
+    top:-120px;
+}
+
+.info_contacto {
+    border: 1px solid var(--color-tertiary-border);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1);
+    justify-content: space-around;
+    justify-self: center;
+    width: 80%;
+    display: grid;
+}
+
+.titulo_info_contacto {
+    height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin: 0;
+}
+
+.email_contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    justify-self: center;
+    padding: 0 0 5px 5px;
+}
+
+.telefono_contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 5px 5px;
+}
+
+.ubicacion_contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 5px 5px;
+
+}
+
+.img_icono_contacto {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.texto_contacto {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.datos_contacto {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    margin: 0;
+    color: var(--color-primary-600);
+    padding-left: 33px;
+
+}
+
+.redes_contacto {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.area_descripcion_contacto {
+    grid-column: 3/7;
+    grid-row: 2/3;
+    justify-items:start;
+    display:grid;
+}
+
+.titulo_descripcion_contacto {
+    font-size: 1.562rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: var(--color-primary-900);
+    margin:20px 0 0 0;
+}
+
+.texto_descripcion_contacto {
+    font-weight: 400;
+    font-size: 0.812rem;
+    line-height: 0.975rem;
+    color: var(--color-primary-700);
+}
+
+.publicaciones_contacto {
+    grid-column: 3/7;
+    grid-row: 3/5;
+}
+
+.titulo_publicaciones_contacto {
+    font-size: 1.562rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: var(--color-primary-900);
+    margin: 0;
+}
+
+.grp_tarjetas_contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta_contacto {
+    width: 11vw;
+    height: 19vh;
+    display:flex;
+    flex-flow: row wrap;
+    align-content:center;
+    justify-content:center;
+    padding-top: 2.5rem;
+}
+
+.img_tarjeta_contacto {
+    width: 6.5vw;
+    height: 20vh;
+
+}
+
+.texto_tarjeta_contacto {
+    font-weight:500;
+    font-size: 1rem;
+    line-height:1.2rem;
+    color:var(--color-primary-50);
+    background-color: var(--color-primary-container);
+    border: 1px solid var(--color-primary-container);
+    padding: 0.625rem 2.5rem 0.625rem 0.315rem;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    margin:0 0 1rem 0;
+}

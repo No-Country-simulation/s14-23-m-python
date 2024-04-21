@@ -4,6 +4,7 @@ import './App.css'
 import Inicio from './components/Inicio/Inicio';
 import Nosotros from './components/Nosotros/Nosotros';
 import Comentarios from './components/Comentarios/Comentarios';
+import Contacto from './components/Contacto/Contacto';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
         <Inicio/>
         <Nosotros/>
         <Comentarios/>
+        <Contacto/>
         
       </div>
       
