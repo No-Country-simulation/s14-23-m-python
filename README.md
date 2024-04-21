@@ -12,7 +12,7 @@ En conjunto,*“Gardenshare”* fusiona estas palabras que evocan la idea de tra
 ###### Hipótesis de la investigación
 
 En los últimos años, hemos sido testigos de un renacimiento en la popularidad de la jardinería y el cultivo de plantas, impulsado en gran medida por el aumento del interés en la sostenibilidad, la conexión con la naturaleza y el bienestar mental. Este resurgimiento ha dado lugar a una comunidad vibrante de entusiastas de las plantas en todo el mundo, que comparten un fervor común por el cuidado y el intercambio de conocimientos. Sin embargo, a pesar de este entusiasmo compartido, muchos aficionados se enfrentan al desafío de encontrar a otros amantes de las plantas en su área local con quienes conectarse y compartir sus pasiones. Esta brecha en la conexión local ha llevado a la necesidad de explorar soluciones innovadoras que faciliten el encuentro y el intercambio, lo que nos lleva a plantear la hipótesis de que existe un interés creciente en conectarse con otros aficionados en su área local para poder intercambiar y compartir conocimientos de jardinería."
-#### Problemas a resolver
+#### 🧰 Problemas a resolver
 **1.** Dificultad para encontrar otros entusiastas de las plantas localmente: Muchas personas interesadas en la jardinería pueden tener dificultades para encontrar a otros aficionados en su área local con quienes puedan conectarse y compartir su pasión.
 
 **2.** Limitada disponibilidad de plantas y variedades locales: Los jardineros aficionados pueden enfrentar dificultades para acceder a una variedad de plantas locales o especializadas que anhelan cultivar en sus jardines, debido a las limitaciones de oferta en los viveros locales.
@@ -31,14 +31,15 @@ En los últimos años, hemos sido testigos de un renacimiento en la popularidad 
 #### 💡 Solución
 ###### ¿Qué proponemos?
 
-**Conectar ** mediante el diseño y desarrollo de una app con una comunidad cálida y entusiastas por las plantas que desean crecer en el cuidado e intercambio de las mismas en su área local, promoviendo también así el intercambio de consejos y conocimientos. *Determinando así:*
+**Conectar** mediante el diseño y desarrollo de una app con una comunidad cálida y entusiastas por las plantas que desean crecer en el cuidado e intercambio de las mismas en su área local, promoviendo también así el intercambio de consejos y conocimientos. *Determinando así:*
 - ***Registro de usuarios:*** Los usuarios podrán crear perfiles personales donde incluyan información sobre sus plantas, intereses y ubicación.
 - ***Búsqueda y filtrado:*** Los usuarios podrán buscar otras personas interesadas en intercambiar plantas y filtrar los resultados por ubicación, tipo de planta, preferencias de intercambio, etc.
 - ***Catálogo de plantas:*** La aplicación contendrá un catálogo completo de plantas donde los usuarios podrán buscar información detallada sobre cada especie, incluyendo cuidados, requerimientos y consejos de cultivo.
 - ***Sistema de mensajes:*** Los usuarios podrán comunicarse a través de mensajes directos para coordinar intercambios y compartir consejos de jardinería.
-- **Calificaciones y comentarios:** Los usuarios podrán calificar y dejar comentarios sobre las experiencias de intercambio con otros usuarios, lo que ayudará a construir una comunidad confiable y colaborativa.
-- **Eventos y encuentros:****** La aplicación facilitará la organización de eventos y encuentros locales donde los usuarios puedan reunirse en persona para intercambiar plantas y conocimientos.
+- ***Calificaciones y comentarios:*** Los usuarios podrán calificar y dejar comentarios sobre las experiencias de intercambio con otros usuarios, lo que ayudará a construir una comunidad confiable y colaborativa.
+- ***Eventos y encuentros:*** La aplicación facilitará la organización de eventos y encuentros locales donde los usuarios puedan reunirse en persona para intercambiar plantas y conocimientos.
 - ***Notificaciones:*** Los usuarios recibirán notificaciones sobre nuevos mensajes, intercambios propuestos, eventos locales y actualizaciones relevantes en la comunidad.
+  
 ### Pantallas a realizar
 *Por cuestiones de tiempo* y tomando en cuenta algunas consideraciones para que todo el equipo pueda trabajar en cada área, se decidió priorizar en los siguientes diseños y por su puesto en su desarrollo.
 
@@ -93,7 +94,7 @@ Como usuario interesado en intercambiar plantas, quiero poder subir información
 - Entonces el usuario debería poder ingresar el nombre de la planta, poder agregar una descripción, poder adjuntar imágenes.
 - Y al confirmar, la planta debería estar disponible en el catálogo de plantas para intercambio.
 
-#####Catálogo de plantas
+##### Catálogo de plantas
 Como usuario, quiero poder ver un catálogo completo de todas las plantas disponibles para intercambio en la aplicación.
 
 ***Criterios de Aceptación:***
@@ -161,12 +162,19 @@ Como usuario, quiero poder enviar mensajes a otros usuarios para discutir detall
 ###### Foro
 ##### Tecnologías utilizadas
 **- Python:** Un lenguaje de programación utilizado para el desarrollo del back-end.
+
 **- React:** Una biblioteca de Javascript de código abierto diseñada para crear interfaces de usuario, utilizada para el desarrollo del front-end.
+
 **- Figma:** Una herramienta de diseño colaborativo utilizada para crear y prototipar la interfaz de usuario.
+
 **- Git/Github:** Un software de control de versiones y una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git, respectivamente.
-**- Trello: **Un software de administración de proyectos.
+
+**- Trello: ** Un software de administración de proyectos.
+
 **- Notion:** Un software de gestión de proyectos y para tomar notas.
+
 **- Discord:** Un servicio de mensajería instantánea y chat de voz, y principal medio de comunicación del equipo.
+
 ##### Funcionalidades desarrolladas
 - Registro de usuarios con información básica.
 - Inicio de sesión para usuarios registrados.
@@ -176,6 +184,21 @@ Como usuario, quiero poder enviar mensajes a otros usuarios para discutir detall
 - Contacto entre usuarios interesados en el intercambio de plantas por medio de métodos de contacto (teléfono, email, redes sociales).
 - Visualización de plantas disponibles para intercambio en un amplio catálogo con opciones de filtrado.
 - Notificaciones internas sobre publicaciones y peticiones de intercambio de plantas.
+
+## Equipo:
+
+Profesionales  | Rol  | Linkedin
+------------- | ------------- | -------------
+Crispthofer Rincon  | Back-end | https://www.linkedin.com/in/carmurrain
+Mauricio Daza  | Back-end | https://www.linkedin.com/in/mauricio-daza
+Luz Frere  | Front-end | https://www.linkedin.com/in/luzfrere/
+María Laura Carballo | Front-end | http://www.linkedin.com/in/maria-laura-carballo
+Ruth Vaccari | Front-end | https://www.linkedin.com/in/ruth-vaccari-b271a6268/
+Sol Abigail | Front-end | 
+Giovanny Mena D | UX/UI | https://www.linkedin.com/in/giovanny-mena-d
+Sebastián Gómez | UX/UI | https://www.linkedin.com/in/sebasr-gomez90/
+Nancy Marchena | QA Tester | https://www.linkedin.com/in/nancy-marchena
+
 
 
 
