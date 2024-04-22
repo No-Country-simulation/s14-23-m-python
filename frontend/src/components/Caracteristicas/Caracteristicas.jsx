@@ -1,8 +1,6 @@
 import './caracteristicas.css';
-import React from 'react'
+//import React from 'react'
 import './tarjetasCaracteristicas'
-
-
 
 
 const Caracteristicas = ({children}) => {

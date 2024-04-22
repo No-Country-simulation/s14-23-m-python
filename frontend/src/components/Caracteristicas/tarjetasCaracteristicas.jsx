@@ -1,3 +1,4 @@
+
 import './caracteristicas.css';
 import './Caracteristicas'
 
@@ -20,5 +21,6 @@ const TarjetasCaracteristicas = (props) => {
         
      );
 }
+
  
 export default TarjetasCaracteristicas;

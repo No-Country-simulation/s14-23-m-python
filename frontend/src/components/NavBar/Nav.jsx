@@ -1,6 +1,8 @@
 import logo from '../../assets/img/e16013005b9cce452e0c8b61c9d7eb8d.png'; 
 import './Nav.css'
 
+import {NavLink} from 'react-router-dom';
+
 const Navbar = () => (
 <nav className="navbar">
    
@@ -9,10 +11,16 @@ const Navbar = () => (
     </a>
 
     <ul>
-        
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Catalogo">Catalogo</a></li>
-        <li><a href="#Sobre">Sobre nosotros</a></li>
+        <li>
+            <NavLink to="/">Inicio</NavLink>
+        </li>
+        <li>
+            <a href="#Catalogo">Catalogo</a>
+            </li>
+        <li>
+            <NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink>
+        </li>
+
         
     </ul>
 
