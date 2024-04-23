@@ -56,7 +56,7 @@ const Testimonios = () => {
           <img src={user1} alt="" width={56} />
         </div>
         <div className="cont-name-user">
-          <h3>Julianna Santander</h3>
+          <h3>Juliana Santander</h3>
           <p>Floristería Paraíso</p>
         </div>
       </div>
@@ -67,9 +67,7 @@ const Testimonios = () => {
       </div>
 
       <div className="cuerpo-test2">
-        <p>
-          <span className="tilde">“</span>
-          El intercambio es simple y seguro, la búsqueda es fantástica, esta comunidad es muy cálida siempre presta ayudar, compartiendo consejos para crecer e inspirar a otros. 
+        <p><span className="tilde">“</span>El intercambio es simple y seguro, la búsqueda es fantástica, esta comunidad es muy cálida siempre presta ayudar, compartiendo consejos para crecer e inspirar a otros. 
           <span className="tilde">”</span>
         </p>
       </div>

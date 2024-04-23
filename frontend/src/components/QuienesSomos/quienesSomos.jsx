@@ -53,7 +53,7 @@ const QuienesSomos = () => (
 
         <div className="cont-acerca-share">
           <p className="parrafo-acerca">
-            "En <strong>Gardenshare</strong>, somos más que una plataforma de intercambio de
+            &quot;En <strong>Gardenshare</strong>, somos más que una plataforma de intercambio de
             plantas; somos una comunidad comprometida con el amor por la
             naturaleza y el cultivo de relaciones entre personas y plantas.
             Desde nuestros humildes comienzos, nos hemos dedicado a fomentar la
@@ -63,7 +63,7 @@ const QuienesSomos = () => (
             espacio donde la pasión por la jardinería se une con el deseo de
             crear un mundo más verde y saludable. Con <strong>Gardenshare</strong>, estamos
             sembrando las semillas de un futuro más floreciente para nuestras
-            comunidades y nuestro planeta."
+            comunidades y nuestro planeta.&quot;
           </p>
         </div>
       </div>
@@ -84,7 +84,7 @@ const QuienesSomos = () => (
             amistad mientras contribuyen al crecimiento verde de sus entornos
             locales.
           </p>
-
+          <br/>
           <p className="p-mision-2 m-b">
             Al conectar a las personas a través de su amor compartido por las
             plantas, aspiramos a crear una red global de jardineros

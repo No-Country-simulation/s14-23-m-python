@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 100px;
 }
 
 .contentText {
@@ -53,6 +54,7 @@
 .main {
   display: flex;
   justify-content: space-between;
+  margin: 0 100px;
 }
 
 .contentFilters {

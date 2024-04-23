@@ -1,6 +1,7 @@
 import '../../pages/Catalogo/catalogStyles.css'
 import plant1 from '../../assets/plant1.png'
 import { CiHeart } from 'react-icons/ci'
+import { NavLink } from 'react-router-dom'
 
 function CardCatalog() {
   return (
@@ -10,7 +11,8 @@ function CardCatalog() {
       </div>
       <img src={plant1} alt="" className="imgCard" />
       <div className="contentTextCard">
-        <p className="textCard">browningia hertlingiana</p>
+        <NavLink to="/detalle-planta"> <p className="textCard">browningia hertlingiana</p></NavLink>
+       
       </div>
     </section>
   )

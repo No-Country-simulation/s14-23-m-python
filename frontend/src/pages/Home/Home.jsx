@@ -1,15 +1,17 @@
+import Inicio from '../../components/Inicio/Inicio'
 import Carrusel from '../../components/Carrusel/Carrusel'
 
 import Caracteristicas from '../../components/Caracteristicas/Caracteristicas'
 import TarjetasCaracteristicas from '../../components/Caracteristicas/tarjetasCaracteristicas'
 import Testimonios from '../../components/Testimonios/testimonios'
-import Footer from '../../components/Footer/footer'
+
 
 
 const Home = () => {
     
     return ( 
         <>
+        <Inicio/>
         <Carrusel/>
 
         <Caracteristicas>
@@ -32,7 +34,6 @@ const Home = () => {
 
         <Testimonios/>
 
-        <Footer/>
         </>
     );
 }

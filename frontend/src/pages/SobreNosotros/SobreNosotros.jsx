@@ -1,3 +1,4 @@
+import Nosotros from '../../components/Nosotros/Nosotros';
 import QuienesSomos from '../../components/QuienesSomos/quienesSomos';
 import Nequipo from '../../components/NuestroEquipo/nuestroEquipo';
 import TarjetaE from '../../components/NuestroEquipo/tarjetaEquipo';
@@ -12,12 +13,15 @@ import Sol from '../../assets/img/Sol.png'
 import Cris from '../../assets/img/1707232856350.jpg'
 import Mauricio from '../../assets/img/1701276580292.jpg'
 
+import Comentarios from '../../components/Comentarios/Comentarios';
+
 const SobreNosotros = () => {
     return (
         <>
-        
+        <Nosotros/>
 
         <QuienesSomos/>
+
         <Nequipo>
         <TarjetaE
          foto={Nancy}
@@ -95,6 +99,8 @@ const SobreNosotros = () => {
         />
 
         </Nequipo>
+
+        <Comentarios/>
         </>
       );
 }

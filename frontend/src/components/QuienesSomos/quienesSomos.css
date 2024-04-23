@@ -14,6 +14,8 @@
     font-weight: 500;
     line-height: 46.8px;
     color: var(--color-tertiary-900);
+    text-align: start;
+    margin-bottom: 15px;
 
 }
 
@@ -70,7 +72,7 @@
 }
 
 .cont-mision{
- width: 350px;
+ width: 370px;
  height: 570px;
  border-radius: 4px;  
  background-color:var(--color-primary-50);
@@ -122,7 +124,7 @@
 
 .cont-vision{
     background-color: var(--color-tertiary-50);
-    width: 350px;
+    width: 370px;
     height: 570px;
     border-radius: 4px;  
     display: flex;

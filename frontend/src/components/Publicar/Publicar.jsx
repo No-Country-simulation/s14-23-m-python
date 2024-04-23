@@ -4,7 +4,7 @@ import GotaRating from './GotaRating';
 import LuzRating from './LuzRating';
 import iconoupload from '../../assets/icon-uploadplant.png';
 
-export default function Publicar() {
+export default function Publicar({closeModal}) {
 
     //const file = document.getElementById('foto');
     //file.addEventListener('change', e => {
@@ -12,12 +12,22 @@ export default function Publicar() {
     //});
 
   return (
-    <div>
+    <div className='modalBg'>
         <div className="contenedor-publicar">
+            <div className="linea1">
+            <div>
             <p className="titulo-publicar">Publicar una nueva planta</p>
             <p className="frase-publicar">Sube una planta para regalar o intercambiar.</p>
 
-            <div className="form-publicar">
+            </div>
+            <div className='contenedor-btn-closed'>
+            <button className='btn-closed' onClick={() => closeModal(false)}> X </button>
+           
+            </div>
+            </div>
+            
+           
+             <div className="form-publicar">
                 <form>
                     <div className="carga-imagen">
                         <img className="icon-subir-planta" src={iconoupload} alt="icon-subir" />
@@ -82,7 +92,7 @@ export default function Publicar() {
                         </div>
                     </div>
                     <div className="datos">
-                        <textarea className="datos-adicionales" cols="70" rows="5" placeholder='Datos Adicionales'></textarea>
+                        <textarea className="datos-adicionales" cols="70" rows="4" placeholder='Datos Adicionales'></textarea>
                     </div>
                     <button className='btn-publicar'>Publicar Planta</button>
                 </form>
