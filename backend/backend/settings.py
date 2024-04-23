@@ -16,17 +16,11 @@ import os
 import cloudinary
 from dotenv import load_dotenv
 
-cloudinary_cloud_name = os.environ.get("CLOUDINARY_CLOUD_NAME")
-cloudinary_api_key = os.environ.get("CLOUDINARY_API_KEY")
-cloudinary_api_secret = os.environ.get("CLOUDINARY_API_SECRET")
+cloudinary_cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME")
+cloudinary_api_key = os.getenv("CLOUDINARY_API_KEY")
+cloudinary_api_secret = os.getenv("CLOUDINARY_API_SECRET")
 print(
     "ENV. VARIABLES", cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret
-)
-
-cloudinary.config(
-    cloud_name=cloudinary_cloud_name,
-    api_key=cloudinary_api_key,
-    api_secret=cloudinary_api_secret,
 )
 import cloudinary.uploader
 import cloudinary.api
@@ -46,6 +40,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
+
+cloudinary.config(
+    cloud_name=cloudinary_cloud_name,
+    api_key=cloudinary_api_key,
+    api_secret=cloudinary_api_secret,
+    secure=True,
+)
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardenshareapp.pythonanywhere.com"]
 
