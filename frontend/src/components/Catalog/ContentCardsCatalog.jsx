@@ -1,5 +1,5 @@
 import CardCatalog from './CardCatalog'
-import '../../styles/catalogStyles.css'
+import '../../pages/Catalogo/catalogStyles.css'
 import PaginationCatalog from './PaginationCatalog'
 
 function ContentCardsCatalog() {

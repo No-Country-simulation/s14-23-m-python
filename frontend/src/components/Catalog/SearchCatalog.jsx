@@ -1,4 +1,4 @@
-import '../../styles/catalogStyles.css'
+import '../../pages/Catalogo/catalogStyles.css'
 import { CiSearch } from 'react-icons/ci'
 
 function SearchCatalog() {

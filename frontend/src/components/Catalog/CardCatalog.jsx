@@ -1,4 +1,4 @@
-import '../../styles/catalogStyles.css'
+import '../../pages/Catalogo/catalogStyles.css'
 import plant1 from '../../assets/plant1.png'
 import { CiHeart } from 'react-icons/ci'
 

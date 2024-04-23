@@ -15,8 +15,8 @@ const Navbar = () => (
             <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-            <a href="#Catalogo">Catalogo</a>
-            </li>
+            <NavLink to="/catalogo">Catalogo</NavLink>
+        </li>
         <li>
             <NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink>
         </li>

@@ -1,7 +1,7 @@
-import ContentCardsCatalog from '../components/Catalog/ContentCardsCatalog'
-import SearchCatalog from '../components/Catalog/SearchCatalog'
-import FiltersCatalog from '../components/Catalog/FiltersCatalog'
-import '../styles/catalogStyles.css'
+import ContentCardsCatalog from '../../components/Catalog/ContentCardsCatalog'
+import SearchCatalog from '../../components/Catalog/SearchCatalog'
+import FiltersCatalog from '../../components/Catalog/FiltersCatalog'
+import './catalogStyles.css'
 
 function Catalog() {
   return (
@@ -28,4 +28,4 @@ function Catalog() {
   )
 }
 
-export default Catalog
+export default Catalog;
