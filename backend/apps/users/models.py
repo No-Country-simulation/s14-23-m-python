@@ -69,7 +69,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         Group,
         verbose_name="groups",
         blank=True,
-        related_name="custom_user_groups",  # Nombre de acceso inverso personalizado
+        related_name="custom_user_groups",  # name inverse access personalized
     )
 
     user_permissions = models.ManyToManyField(
