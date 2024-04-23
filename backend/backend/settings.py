@@ -18,6 +18,7 @@ import cloudinary.api
 from decouple import config
 from dotenv import load_dotenv
 import os
+import logging
 
 
 load_dotenv()
@@ -63,7 +64,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
-    # "rest_framework_simplejwt.authentication.JWTAuthentication",
+    # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     "rest_framework_simplejwt.token_blacklist",
     "cloudinary_storage",
     "cloudinary",
@@ -80,7 +81,14 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # 'rest_framework_simplejwt.middleware.JWTAuthenticationMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}
 
 ROOT_URLCONF = "backend.urls"
 
@@ -185,5 +193,21 @@ CORS_ALLOW_CREDENTIALS = True
 
 # Uploading Images to Cloudinary
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+
+# Logging setup
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "debug.log",
+        },
+    },
+    "loggers": {
+        "django": {"handlers": ["file"], "level": "DEBUG", "propagate": True},
+    },
+}
 
 # AUTH_USER_MODEL = 'apps.users'
