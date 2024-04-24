@@ -28,6 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 cloudinary_cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME")
 cloudinary_api_key = os.getenv("CLOUDINARY_API_KEY")
 cloudinary_api_secret = os.getenv("CLOUDINARY_API_SECRET")
+cloudinary_url = os.getenv("CLOUDINARY_URL")
 # print(
 #    "ENV. VARIABLES", cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret
 # )
@@ -44,8 +45,11 @@ cloudinary.config(
     cloud_name=cloudinary_cloud_name,
     api_key=cloudinary_api_key,
     api_secret=cloudinary_api_secret,
+    cloudinary_url=cloudinary_url,
     secure=True,
 )
+# Avoid MaxRetryError
+CLOUDINARY_CONNECTION_TIMEOUT = 10
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardenshareapp.pythonanywhere.com"]
 
