@@ -51,7 +51,7 @@ cloudinary.config(
 # Avoid MaxRetryError
 CLOUDINARY_CONNECTION_TIMEOUT = 10
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardenshareapp.pythonanywhere.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardensharebackend.pythonanywhere.com"]
 
 
 # Application definition
@@ -143,7 +143,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
-    "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -151,7 +151,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
-    "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -159,7 +159,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
-    "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
     # "[frontend]",
 ]
 
