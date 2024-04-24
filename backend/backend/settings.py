@@ -46,6 +46,7 @@ cloudinary.config(
     api_key=cloudinary_api_key,
     api_secret=cloudinary_api_secret,
     cloudinary_url=cloudinary_url,
+    api_proxy="http://proxy.server:3128",
     secure=True,
 )
 # Avoid MaxRetryError
