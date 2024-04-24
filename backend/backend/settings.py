@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 import os
-import cloudinary
 from dotenv import load_dotenv
+import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 from decouple import config
@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 cloudinary_cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME")
 cloudinary_api_key = os.getenv("CLOUDINARY_API_KEY")
 cloudinary_api_secret = os.getenv("CLOUDINARY_API_SECRET")
-print(
-    "ENV. VARIABLES", cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret
-)
+# print(
+#    "ENV. VARIABLES", cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret
+# )
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
