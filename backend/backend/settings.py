@@ -12,19 +12,40 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
+import os
+from dotenv import load_dotenv
 import cloudinary
+
+# Load vars env
+load_dotenv()
+
+cloudinary_cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME")
+cloudinary_api_key = os.getenv("CLOUDINARY_API_KEY")
+cloudinary_api_secret = os.getenv("CLOUDINARY_API_SECRET")
+cloudinary_url = os.getenv("CLOUDINARY_URL")
+api_proxy_pyanywh = "http://proxy.server:3128"
+
+cloudinary.config(
+    cloud_name=cloudinary_cloud_name,
+    api_key=cloudinary_api_key,
+    api_secret=cloudinary_api_secret,
+    cloudinary_url=cloudinary_url,
+    api_proxy=api_proxy_pyanywh,
+    secure=True,
+)
+
 import cloudinary.uploader
 import cloudinary.api
 from decouple import config
-from dotenv import load_dotenv
-import os
 import logging
 
 
-load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# print(
+#    "ENV. VARIABLES", cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret
+# )
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -34,7 +55,15 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "gardenshareapp.pythonanywhere.com"]
+# Avoid MaxRetryError
+CLOUDINARY_CONNECTION_TIMEOUT = 10
+
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "gardenshareapp.pythonanywhere.com",
+    "gardensharebackend.pythonanywhere.com",
+]
 
 
 # Application definition
@@ -127,6 +156,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
     "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -135,6 +165,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
     "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -143,6 +174,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
     "https://gardenshareapp.pythonanywhere.com",
+    "https://gardensharebackend.pythonanywhere.com",
     # "[frontend]",
 ]
 
